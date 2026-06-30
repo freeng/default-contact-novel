@@ -18,6 +18,29 @@ python -m http.server 8123 -d docs
 http://localhost:8123/
 ```
 
+## 一键同步和发布
+
+正文改完后，在项目根目录运行：
+
+```powershell
+python publish.py
+```
+
+这会自动把根目录的 `默认联系人_第*章_*.txt` 同步到 `docs/chapters/`，并更新目录文件。
+
+同步、提交、推送 GitHub，并部署到服务器：
+
+```powershell
+python publish.py --all
+```
+
+服务器密码不会写进仓库。可以临时输入，也可以先设置环境变量：
+
+```powershell
+$env:NOVEL_DEPLOY_PASSWORD = "你的服务器密码"
+python publish.py --all
+```
+
 ## 发布到 GitHub Pages
 
 1. 新建一个 GitHub 仓库。

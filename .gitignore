@@ -16,3 +16,4 @@ node_modules/
 .env.*
 docs/assets/cover-source.*
 output/
+__pycache__/
