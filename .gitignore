@@ -1,0 +1,17 @@
+# Private source material and local processing outputs
+私聊_*.jsonl
+私聊_*.json
+私聊_*.min_by_month/
+默认联系人_大纲与分批读档计划.md
+默认联系人_第*.txt
+extract_chat_min.py
+split_chat_by_month.py
+
+# Local/runtime noise
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+.env
+.env.*
+

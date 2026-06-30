@@ -1,0 +1,84 @@
+{
+  "title": "默认联系人",
+  "status": "全文完",
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "number": 1,
+      "title": "雨先落在阳台上",
+      "file": "chapters/chapter-01.txt"
+    },
+    {
+      "id": "chapter-02",
+      "number": 2,
+      "title": "玩笑有了归处",
+      "file": "chapters/chapter-02.txt"
+    },
+    {
+      "id": "chapter-03",
+      "number": 3,
+      "title": "房子替未来开口",
+      "file": "chapters/chapter-03.txt"
+    },
+    {
+      "id": "chapter-04",
+      "number": 4,
+      "title": "等你回家",
+      "file": "chapters/chapter-04.txt"
+    },
+    {
+      "id": "chapter-05",
+      "number": 5,
+      "title": "把未来算成数字",
+      "file": "chapters/chapter-05.txt"
+    },
+    {
+      "id": "chapter-06",
+      "number": 6,
+      "title": "孩子先来到话里",
+      "file": "chapters/chapter-06.txt"
+    },
+    {
+      "id": "chapter-07",
+      "number": 7,
+      "title": "身体替日子作答",
+      "file": "chapters/chapter-07.txt"
+    },
+    {
+      "id": "chapter-08",
+      "number": 8,
+      "title": "夜醒没有对白",
+      "file": "chapters/chapter-08.txt"
+    },
+    {
+      "id": "chapter-09",
+      "number": 9,
+      "title": "家开始有齿轮",
+      "file": "chapters/chapter-09.txt"
+    },
+    {
+      "id": "chapter-10",
+      "number": 10,
+      "title": "众人围成摇篮",
+      "file": "chapters/chapter-10.txt"
+    },
+    {
+      "id": "chapter-11",
+      "number": 11,
+      "title": "发烧把夜拉长",
+      "file": "chapters/chapter-11.txt"
+    },
+    {
+      "id": "chapter-12",
+      "number": 12,
+      "title": "校门把世界打开",
+      "file": "chapters/chapter-12.txt"
+    },
+    {
+      "id": "chapter-13",
+      "number": 13,
+      "title": "小孩睡后，灯还亮着",
+      "file": "chapters/chapter-13.txt"
+    }
+  ]
+}

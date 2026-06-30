@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta
+      name="description"
+      content="《默认联系人》静态小说阅读页，只发布整理后的正文章节。"
+    >
+    <title>默认联系人</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="reader-shell">
+      <aside class="library-panel" aria-label="章节目录">
+        <div class="book-mark">
+          <div class="cover-art" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div>
+            <p class="eyebrow" id="bookStatus">连载中</p>
+            <h1 id="bookTitle">默认联系人</h1>
+          </div>
+        </div>
+
+        <nav class="chapter-nav" id="chapterNav" aria-label="章节列表"></nav>
+      </aside>
+
+      <main class="reading-stage">
+        <header class="reader-toolbar" aria-label="阅读控制">
+          <div class="chapter-kicker" id="chapterKicker">第 1 章</div>
+
+          <div class="toolbar-actions">
+            <button type="button" class="tool-button" id="prevChapter">上一章</button>
+            <button type="button" class="tool-button" id="nextChapter">下一章</button>
+            <span class="divider" aria-hidden="true"></span>
+            <button type="button" class="icon-button" id="decreaseFont" aria-label="减小字号">A-</button>
+            <button type="button" class="icon-button" id="increaseFont" aria-label="增大字号">A+</button>
+            <button type="button" class="tool-button" id="themeToggle" aria-pressed="false">夜间</button>
+          </div>
+        </header>
+
+        <article class="chapter-content" id="chapterContent" tabindex="-1" aria-live="polite">
+          <div class="loading-state">正在打开章节...</div>
+        </article>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
