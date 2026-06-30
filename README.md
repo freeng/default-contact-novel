@@ -21,10 +21,10 @@ http://localhost:8123/
 ## 发布到 GitHub Pages
 
 1. 新建一个 GitHub 仓库。
-2. 只提交 `.gitignore`、`README.md` 和 `docs/`。
+2. 推送本仓库的 `main` 分支。
 3. 在仓库设置里打开 `Settings > Pages`。
-4. `Build and deployment` 选择 `Deploy from a branch`。
-5. `Branch` 选择 `main`，目录选择 `/docs`。
+4. `Build and deployment` 的 `Source` 选择 `GitHub Actions`。
+5. 等待 `Deploy GitHub Pages` 工作流完成，站点会自动发布 `docs/` 目录。
 
 提交前建议先确认：
 
