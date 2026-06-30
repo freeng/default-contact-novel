@@ -17,8 +17,11 @@
     root: document.documentElement,
     bookTitle: document.getElementById("bookTitle"),
     bookStatus: document.getElementById("bookStatus"),
+    chapterCount: document.getElementById("chapterCount"),
+    readingPercent: document.getElementById("readingPercent"),
     chapterNav: document.getElementById("chapterNav"),
     chapterKicker: document.getElementById("chapterKicker"),
+    toolbarTitle: document.getElementById("toolbarTitle"),
     chapterContent: document.getElementById("chapterContent"),
     progressBar: document.getElementById("progressBar"),
     prevChapter: document.getElementById("prevChapter"),
@@ -109,6 +112,7 @@
   function updateChapterControls() {
     const chapter = state.manifest.chapters[state.chapterIndex];
     els.chapterKicker.textContent = `第 ${chapter.number} 章`;
+    els.toolbarTitle.textContent = chapter.title;
     els.prevChapter.disabled = state.chapterIndex === 0;
     els.nextChapter.disabled = state.chapterIndex === state.manifest.chapters.length - 1;
     document.title = `第 ${chapter.number} 章 ${chapter.title} - ${state.manifest.title}`;
@@ -123,9 +127,12 @@
 
     const heading = document.createElement("h2");
     heading.textContent = title;
+    const meta = document.createElement("div");
+    meta.className = "chapter-meta";
+    meta.textContent = `默认联系人 / ${title.replace(/^第\s*\d+\s*章\s*/, "")}`;
 
     const fragment = document.createDocumentFragment();
-    fragment.append(heading);
+    fragment.append(meta, heading);
 
     paragraphs.forEach((paragraph) => {
       const p = document.createElement("p");
@@ -144,7 +151,9 @@
 
   function updateProgress() {
     const ratio = getScrollRatio();
-    els.progressBar.style.width = `${Math.round(ratio * 1000) / 10}%`;
+    const percent = `${Math.round(ratio * 1000) / 10}%`;
+    els.progressBar.style.width = percent;
+    els.readingPercent.textContent = percent;
 
     const chapter = state.manifest?.chapters[state.chapterIndex];
     if (chapter) {
@@ -207,6 +216,7 @@
     state.manifest = await response.json();
     els.bookTitle.textContent = state.manifest.title;
     els.bookStatus.textContent = state.manifest.status || "连载中";
+    els.chapterCount.textContent = String(state.manifest.chapters.length);
 
     const hashIndex = getChapterFromHash();
     const savedIndex = state.manifest.chapters.findIndex(

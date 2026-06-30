@@ -20,22 +20,34 @@
       <aside class="library-panel" aria-label="章节目录">
         <div class="book-mark">
           <div class="cover-art" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
+            <img src="assets/cover.webp" alt="">
           </div>
-          <div>
+          <div class="book-copy">
             <p class="eyebrow" id="bookStatus">连载中</p>
             <h1 id="bookTitle">默认联系人</h1>
+            <p class="book-note">一部长篇日常关系小说</p>
           </div>
         </div>
 
+        <div class="book-meta" aria-label="作品信息">
+          <span><strong id="chapterCount">13</strong> 章</span>
+          <span>静态阅读</span>
+          <span>仅正文</span>
+        </div>
+
+        <div class="nav-heading">
+          <span>目录</span>
+          <span id="readingPercent">0%</span>
+        </div>
         <nav class="chapter-nav" id="chapterNav" aria-label="章节列表"></nav>
       </aside>
 
       <main class="reading-stage">
         <header class="reader-toolbar" aria-label="阅读控制">
-          <div class="chapter-kicker" id="chapterKicker">第 1 章</div>
+          <div>
+            <div class="chapter-kicker" id="chapterKicker">第 1 章</div>
+            <div class="toolbar-title" id="toolbarTitle">雨先落在阳台上</div>
+          </div>
 
           <div class="toolbar-actions">
             <button type="button" class="tool-button" id="prevChapter">上一章</button>
@@ -56,4 +68,3 @@
     <script src="app.js"></script>
   </body>
 </html>
-
